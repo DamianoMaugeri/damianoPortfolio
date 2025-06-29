@@ -1,8 +1,15 @@
+import Carousel from "../components/carousel/Carousel";
+import Hero from "../components/hero/Hero";
+import Works from "../components/works/Works";
 
 
 function HomePage(){
     return<>
-    <div>home</div>
+    <Hero />
+    <Carousel />
+    <Works />
+
+
     </>
 };
 

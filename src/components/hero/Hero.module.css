@@ -1,0 +1,70 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 350px;
+  overflow: hidden;
+  cursor: ew-resize;
+  background-image: url('./img/rr.jpg');
+  background-size: cover;
+}
+
+.imageLeft img,
+.revealLeft img {
+  object-fit: cover;
+  object-position: left;  /* 🔧 fissa a sinistra cambiato da 100% a vw  */
+  width: 100vw; 
+  height: 100%;
+}
+
+.imageRight img,
+.revealRight img {
+  object-fit: cover;
+  object-position: right;  /* 🔧 fissa a destra   cambiato da 100% a vw*/
+  width: 100vw;
+  height: 100%;
+}
+
+/* Queste due sovrappongono e rivelano la parte visibile */
+.revealLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.revealLeft img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.revealRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.revealRight img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+}
+
+/* Linea divisoria */
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  z-index: 3;
+}

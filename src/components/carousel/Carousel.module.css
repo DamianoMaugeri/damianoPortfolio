@@ -1,0 +1,38 @@
+/* .carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.carouselWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  animation: scroll 60s linear infinite;
+}
+
+/* Puoi regolare la velocità aumentando o diminuendo i secondi */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
