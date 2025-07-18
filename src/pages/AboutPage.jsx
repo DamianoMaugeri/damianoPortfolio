@@ -1,8 +1,12 @@
+import Profile from "../components/profile/Profile";
 
 
 
 function AboutPage(){
-    return <div>about</div>
+    return <>
+
+    <Profile />
+    </>
 };
 
 export default AboutPage;

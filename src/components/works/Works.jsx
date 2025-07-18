@@ -24,10 +24,10 @@ function Works(){
 
         <section className="works">
 
-            <div className="row">
+            <div className="row gy-4">
                 {projects.map((project, i) => (
                     
-                <div className="col-4" key={i}>
+                <div className="col-md-4" key={i}>
                     <ProjectCard element={project} />
                     
                 </div>
@@ -35,14 +35,7 @@ function Works(){
                 ))}
 
             </div>
-
-
-
         </section>
-
-
-
-
 
     </main>
 
